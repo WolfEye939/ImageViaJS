@@ -5,3 +5,7 @@ body {
 .dummy {
     color: rgb(119, 119, 119);
 }
+
+.images {
+    display: inline;
+}

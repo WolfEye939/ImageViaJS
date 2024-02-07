@@ -2,12 +2,16 @@ const imgRoot = "./img/"
 
 const imagelist = [
     "Klem.png",
-    "KlemAE.png"
+    "KlemAE.png",
+    "MalAsri"
+
+
 ];
 
 //let klemImg = document.getElementsById('');
 function changeImgA() { 
     document.getElementById("ImgKlem").src = imgRoot + imagelist[1];
+    document.getElementById("ImgAsri").src = imgRoot + imagelist[2] + " AE.png";
     return console.log("Changed to Alpha Emission");
 };
 
