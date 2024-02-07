@@ -9,5 +9,18 @@
 			"terminal.background": "#000000",
 			"terminal.foreground": "#00ff00"
 		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "launch in edge",
+				"request": "launch",
+				"type": "msedge",
+				"url": "http://localhost:8080",
+				"webRoot": "${workspaceFolder}"
+			}
+
+		]
 	}
 }

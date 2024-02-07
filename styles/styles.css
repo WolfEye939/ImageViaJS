@@ -2,6 +2,6 @@ body {
     background-color: #3d0303;
 }
 
-.dummy {
+p.dummy, h1.dummy {
     color: rgb(119, 119, 119);
 }
