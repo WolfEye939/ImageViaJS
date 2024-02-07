@@ -8,19 +8,19 @@
 		"workbench.colorCustomizations": {
 			"terminal.background": "#000000",
 			"terminal.foreground": "#00ff00"
-		}
+		},
+		"gutterpreview.showImagePreviewOnGutter": true,
+		"gutterpreview.imagePreviewMaxHeight": 256,
+		"gutterpreview.imagePreviewMaxWidth": 256,
 	},
 	"launch": {
 		"version": "0.2.0",
-		"configurations": [
-			{
-				"name": "launch",
+		"configurations": [ {
+				"name": "launch In edge",
 				"request": "launch",
 				"type": "msedge",
 				"url": "${workspaceFolder}/index.html",
 				"webRoot": "${workspaceFolder}"
-			}
-
-		]
+			} ]
 	}
 }
