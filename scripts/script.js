@@ -6,11 +6,13 @@ const imagelist = [
     "Faraday"
 ];
 
+
+/*
 const Klem_IMG = document.getElementById("ImgKlem")
 const Asri_IMG = document.getElementById("ImgAsri")
 const Fara_IMG = document.getElementById("ImgFara")
+*/
 
-//let klemImg = document.getElementsById('');
 function changeImgA() { 
     document.getElementById("ImgKlem").src = imgRoot + imagelist[0] + " AE.png"
     document.getElementById("ImgAsri").src = imgRoot + imagelist[1] + " AE.png";
@@ -26,15 +28,25 @@ function changeImgB() {
     return console.log("Changed back to Original");
 }
 
-function changeImg() {
-    if (Klem_IMG.src.match("./img/Klem.png"), Asri_IMG.src.match("./img/MalAsri.PNG"), Fara_IMG.src.match("./img/Fara.PNG")) { 
-        document.getElementById("ImgKlem").src = imgRoot + imagelist[0] + " AE.png";
-        document.getElementById("ImgAsri").src = imgRoot + imagelist[1] + " AE.png";
-        document.getElementById("ImgFara").src = imgRoot + imagelist[2] + " AE.png";
-    } 
-    else { 
-        document.getElementById("ImgKlem").src = imgRoot + imagelist[0] + ".png";
-        document.getElementById("ImgAsri").src = imgRoot + imagelist[1] + ".png";
-        document.getElementById("ImgFara").src = imgRoot + imagelist[2] + ".png"; 
-    }
+var Klem_IMG = document.getElementById('ImgKlem');
+var Asri_IMG = document.getElementById('ImgAsri');
+var Fara_IMG = document.getElementById('ImgFara');
+
+function changeImg1() {
+    if (Klem_IMG.src.match("Klem.png")) 
+      { Klem_IMG.src = imgRoot + imagelist[0] + "_AE.png"; } 
+    else { Klem_IMG.src = imgRoot + imagelist[0] + ".png"; }
+}
+
+function changeImg2() {
+    if (Asri_IMG.src.match("MalAsri.png")) 
+      { Asri_IMG.src = imgRoot + imagelist[1] + "_AE.png"; }
+    else { document.getElementById("ImgAsri").src = imgRoot + imagelist[1] + ".png"; }
+}
+
+function changeImg3() {
+    if (Fara_IMG.src.match("Faraday.png")) 
+        { Fara_IMG.src = imgRoot + imagelist[2] + "_AE.png"; }
+      else 
+        { document.getElementById("ImgFara").src = imgRoot + imagelist[2] + ".png"; }
 }
