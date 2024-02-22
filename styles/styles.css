@@ -1,11 +1,23 @@
-body {
-    background-color: #3d0303;
-}
+body { background-color: #3d0303; }
 
 .dummy {
     color: rgb(119, 119, 119);
+    text-align: center;
 }
 
-.images {
-    display: inline-block;
+.images { display: inline-block; }
+
+h1.hea { 
+    font-size: 32pt; 
+    margin-bottom: 0px;
+}
+
+p.desc {
+    font-weight: bold;
+}
+
+inst {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
