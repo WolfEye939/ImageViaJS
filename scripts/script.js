@@ -3,7 +3,8 @@ const imgRoot = "./img/"
 const imagelist = [
     "Klem",
     "MalAsri",
-    "Faraday"
+    "Faraday",
+    "MalAsriGlass"
 ];
 
 
@@ -31,6 +32,7 @@ function changeImgB() {
 var Klem_IMG = document.getElementById('ImgKlem');
 var Asri_IMG = document.getElementById('ImgAsri');
 var Fara_IMG = document.getElementById('ImgFara');
+var GlassAE_IMG = document.getElementById('ImgGlassAE');
 
 function changeImg1() {
     if (Klem_IMG.src.match("Klem.png")) 
@@ -49,4 +51,11 @@ function changeImg3() {
         { Fara_IMG.src = imgRoot + imagelist[2] + "_AE.png"; }
       else 
         { document.getElementById("ImgFara").src = imgRoot + imagelist[2] + ".png"; }
+}
+
+function changeImg4() {
+  if(GlassAE_IMG.src.match("MalAsriGlass.png"))
+      { GlassAE_IMG.src = imgRoot + imagelist[3] + "_AE.png"; }
+    else
+      { document.getElementById("ImgGlassAE").src = imgRoot + imagelist[3] + ".png"; }
 }
