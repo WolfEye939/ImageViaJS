@@ -4,6 +4,8 @@
 			"path": "../../ImageViaJS"
 		}
 	],
+
+
 	"settings": {
 		"workbench.colorCustomizations": {
 			"terminal.background": "#000000",
@@ -16,6 +18,8 @@
 		"gutterpreview.imagePreviewMaxHeight": 256,
 		"gutterpreview.imagePreviewMaxWidth": 256,
 	},
+
+	
 	"launch": {
 		"version": "0.2.0",
 		"configurations": [ {
