@@ -28,6 +28,8 @@
 				"type": "msedge",
 				"url": "${workspaceFolder}/index.html",
 				"webRoot": "${workspaceFolder}"
-			} ]
+			} ],
+
+			"files.exclude": { ".vscode": true, }
 	}
 }
