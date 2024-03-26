@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>ImageViaJS</title>
+            <title>Alpha Split</title>
             <link rel="stylesheet" href="./styles/styles.css">
             <script src="./scripts/script.js" defer></script>
         </head>
@@ -17,3 +17,31 @@
                 </ul>
 
             </nav>
+
+            <div class="dummy">
+                <h1 class="hea">GLASS + AE COMBO</h2>
+                <p class="desc">Another thing you can do in blender with this method is plug the alpha into the factor value of the "mix color" node.
+                    <br> this <b><i>separates</i></b> the two colors in the mix node by the alpha layer, allowing for more customization and creativivty</p>
+
+                    <p>In this example I used a copy of the model and turned it into a glass overlay by taking just the alpha, from the image, plus 2 colors</p>
+
+                    <div class="images">
+                        <img id="ImgGlassAE" src="./img/MalAsriGlass.png" onclick="changeImg4()"/>
+                    </div>
+
+                <hr>
+                <p class="desc">Here's a screenshot of the blend file, showing the node setup and result</p>
+                <hr>
+                <img src="./img/glass_AE_COMBO.png" width="1080px" height="640px">
+
+                <hr>
+                <h1 class="hea">AlphaSplit + volume glow</h1>
+
+                <div class="images">
+                    <img id="ImgCube" src="img/cube.gif" alt="Cube with basic diffuse shading" onclick="changeGif1()"">
+                </div>
+                    <p class="desc">You can also split the alpha, and use one of the 2 color attributes in the mix color node to set transparency of either the alpha or other (reverse select),
+                        <br> In this case I took the default cube and took some image, setting up my selection for the alpha, split the alpha (like above), than used the transparent shader to make the
+                        <br> white-space, finally duplicating the cube and using a volume scatter to <i>somewhat</i> fill the inside of the cube.
+                    </p>
+            </div>

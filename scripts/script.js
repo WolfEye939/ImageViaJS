@@ -4,8 +4,15 @@ const imagelist = [
     "Klem",
     "MalAsri",
     "Faraday",
-    "MalAsriGlass"
+    "MalAsriGlass",
+    "cube",
 ];
+
+var Klem_IMG = document.getElementById('ImgKlem');
+var Asri_IMG = document.getElementById('ImgAsri');
+var Fara_IMG = document.getElementById('ImgFara');
+var GlassAE_IMG = document.getElementById('ImgGlassAE');
+var CubeAE_Gif = document.getElementById('ImgCube');
 
 
 /*
@@ -29,10 +36,7 @@ function changeImgB() {
     return console.log("Changed back to Original");
 }
 
-var Klem_IMG = document.getElementById('ImgKlem');
-var Asri_IMG = document.getElementById('ImgAsri');
-var Fara_IMG = document.getElementById('ImgFara');
-var GlassAE_IMG = document.getElementById('ImgGlassAE');
+
 
 function changeImg1() {
     if (Klem_IMG.src.match("Klem.png")) 
@@ -58,4 +62,11 @@ function changeImg4() {
       { GlassAE_IMG.src = imgRoot + imagelist[3] + "_AE.png"; }
     else
       { document.getElementById("ImgGlassAE").src = imgRoot + imagelist[3] + ".png"; }
+}
+
+function changeGif1() {
+  if(CubeAE_Gif.src.match("cube.gif"))
+      {CubeAE_Gif.src = imgRoot + imagelist[4] + "_ae.gif"; }
+    else
+      { document.getElementById("ImgCube").src = imgRoot + imagelist[4] + ".gif"; }
 }
