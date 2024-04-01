@@ -3,7 +3,10 @@
 		{
 			"path": "../../ImageViaJS"
 		}
+
 	],
+
+
 
 
 	"settings": {
@@ -17,6 +20,17 @@
 		"gutterpreview.showImagePreviewOnGutter": true,
 		"gutterpreview.imagePreviewMaxHeight": 256,
 		"gutterpreview.imagePreviewMaxWidth": 256,
+
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+
+			".vscode/ImageViaJS.code-workspace": true
+		  },
 	},
 
 	
